@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>信義區垃圾代收｜到府收垃圾服務（台北市）</title>
+  <meta name="description" content="台北市信義區垃圾代收與到府收垃圾服務：清晨、白天、晚間、週末皆可協調，社區/商辦皆可。準點抵達、漏收有賠償機制。立即加 LINE 預約。">
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23066c42'/><path d='M12 8h8v16h-8z' fill='%23ffffff'/><path d='M10 12h12v2H10zm0 4h12v2H10z' fill='%2306C755'/></svg>" />
+  <link rel="canonical" href="https://your-site-url/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="信義區垃圾代收｜到府收垃圾服務">
+  <meta property="og:description" content="信義區到府垃圾代收：清晨、白天、晚間、週末皆可協調。準點抵達、漏收有賠償機制。立即加 LINE 預約。">
+  <meta property="og:image" content="https://your-site-url/cover.jpg">
+  <meta property="og:url" content="https://your-site-url/">
+  <meta property="og:locale" content="zh_TW">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="信義區垃圾代收｜到府收垃圾服務">
+  <meta name="twitter:description" content="信義區到府垃圾代收：清晨、白天、晚間、週末皆可協調。準點抵達、漏收有賠償機制。">
+  <meta name="twitter:image" content="https://your-site-url/cover.jpg">
+
+  <!-- Schema.org JSON-LD：在地服務 -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"信義區垃圾代收服務",
+    "serviceType":"垃圾代收",
+    "description":"台北市信義區專業垃圾代收服務，提供到府收垃圾、社區商辦服務，清晨、白天、晚間、週末皆可協調",
+    "areaServed": { 
+      "@type": "AdministrativeArea", 
+      "name": "台北市信義區",
+      "containsPlace": [
+        {"@type": "Place", "name": "象山"},
+        {"@type": "Place", "name": "永春"},
+        {"@type": "Place", "name": "吳興街"}
+      ]
+    },
+    "provider":{
+      "@type":"Organization",
+      "name":"信義區垃圾代收服務中心",
+      "url":"https://your-site-url/",
+      "sameAs":["https://lin.ee/LVJA9bE"],
+      "logo":"https://your-site-url/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://lin.ee/LVJA9bE"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0c1116; 
+      --card:#101820; 
+      --line:#06C755; 
+      --fg:#e9f0f5; 
+      --muted:#9fb0bd; 
+      --brand:#3fb8ff; 
+      --stroke:#1b2a36;
+      --accent:#4ecdc4;
+      --gradient-start:#0c1116;
+      --gradient-end:#0e151c;
+    }
+    
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+    
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    
+    img{
+      max-width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+    }
+    
+    a{
+      color:var(--brand);
+      text-decoration:none;
+      transition:all 0.3s ease;
+    }
+    
+    a:hover{
+      color:var(--accent);
+    }
+    
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+      padding:24px;
+    }
+    
+    .hero{
+      padding:60px 24px;
+      background:linear-gradient(180deg,var(--gradient-start) 0%,var(--gradient-end) 100%);
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    
+    .hero::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background:radial-gradient(circle at 30% 20%, rgba(63,184,255,0.1) 0%, transparent 50%),
+                 radial-gradient(circle at 70% 80%, rgba(78,205,196,0.08) 0%, transparent 50%);
+      pointer-events:none;
+    }
+    
+    .hero-content{
+      position:relative;
+      z-index:1;
+    }
+    
+    .hero-icons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      margin-bottom:20px;
+      opacity:0.6;
+    }
+    
+    .kicker{
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:#7aa6bd;
+      font-weight:700;
+      font-size:12px;
+      margin-bottom:12px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    
+    h1{
+      font-size:clamp(26px, 5vw, 38px);
+      margin:10px 0 20px;
+      line-height:1.2;
+      font-weight:700;
+    }
+    
+    .sub{
+      color:var(--muted);
+      margin:0 0 30px;
+      max-width:680px;
+      margin-left:auto;
+      margin-right:auto;
+      font-size:18px;
+      line-height:1.6;
+    }
+    
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:30px;
+      justify-content:center;
+    }
+    
+    .btn{
+      padding:14px 24px;
+      border-radius:12px;
+      border:1px solid var(--stroke);
+      background:#0a131a;
+      color:var(--fg);
+      font-weight:600;
+      cursor:pointer;
+      transition:all 0.3s ease;
+      font-size:14px;
+      min-width:140px;
+      text-align:center;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      justify-content:center;
+    }
+    
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    }
+    
+    .btn--primary{
+      background:linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      color:#041a26;
+      border-color:transparent;
+      font-weight:700;
+    }
+    
+    .btn--primary:hover{
+      background:linear-gradient(135deg, var(--accent) 0%, var(--brand) 100%);
+    }
+    
+    .section-icon{
+      width:24px;
+      height:24px;
+      margin-right:12px;
+      color:var(--brand);
+      flex-shrink:0;
+    }
+    
+    .grid{
+      display:grid;
+      gap:20px;
+    }
+    
+    .grid-3{
+      grid-template-columns:1fr;
+    }
+    
+    @media(min-width:768px){
+      .grid-3{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    
+    @media(min-width:1024px){
+      .grid-3{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+    
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:24px;
+      transition:all 0.3s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    
+    .card::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:3px;
+      background:linear-gradient(90deg, var(--brand) 0%, var(--accent) 100%);
+      opacity:0;
+      transition:opacity 0.3s ease;
+    }
+    
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.2);
+      border-color:var(--brand);
+    }
+    
+    .card:hover::before{
+      opacity:1;
+    }
+    
+    .h2{
+      font-size:22px;
+      margin:8px 0 12px;
+      font-weight:600;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    
+    .muted{
+      color:var(--muted);
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+      font-weight:600;
+      margin-bottom:8px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    
+    .list{
+      margin:12px 0;
+      padding-left:0;
+      list-style:none;
+    }
+    
+    .list li{
+      margin:12px 0;
+      line-height:1.6;
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+    
+    .list-icon{
+      width:20px;
+      height:20px;
+      color:var(--accent);
+      flex-shrink:0;
+      margin-top:2px;
+    }
+    
+    section{
+      margin-top:50px;
+    }
+    
+    .section-header{
+      display:flex;
+      align-items:center;
+      margin-bottom:30px;
+      justify-content:center;
+    }
+    
+    .section-title{
+      font-size:28px;
+      font-weight:700;
+      color:var(--fg);
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    
+    footer{
+      color:#7d8d9a;
+      font-size:14px;
+      padding:50px 24px;
+      text-align:center;
+      border-top:1px solid var(--stroke);
+      margin-top:80px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+    
+    /* 懸浮 LINE 按鈕 */
+    .float-line{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      background:var(--line);
+      color:#001a08;
+      padding:16px 20px;
+      border-radius:50px;
+      box-shadow:0 12px 35px rgba(6,199,85,0.4);
+      font-weight:800;
+      font-size:14px;
+      text-decoration:none;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border:2px solid rgba(255,255,255,0.2);
+    }
+    
+    .float-line:hover{
+      transform:translateY(-3px) scale(1.05);
+      box-shadow:0 16px 40px rgba(6,199,85,0.6);
+      color:#001a08;
+    }
+    
+    .float-line svg{
+      width:24px;
+      height:24px;
+      display:block;
+      flex-shrink:0;
+    }
+    
+    /* 導覽錨點列 */
+    .nav{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:24px;
+      justify-content:center;
+    }
+    
+    .pill{
+      border:1px solid var(--stroke);
+      border-radius:999px;
+      padding:10px 18px;
+      color:var(--muted);
+      background:rgba(16,24,32,0.8);
+      font-size:13px;
+      transition:all 0.3s ease;
+      font-weight:500;
+    }
+    
+    .pill:hover{
+      border-color:var(--brand);
+      color:var(--brand);
+      background:rgba(63,184,255,0.1);
+    }
+    
+    .faq-item{
+      margin:20px 0;
+      padding:20px;
+      background:rgba(63,184,255,0.08);
+      border-radius:12px;
+      border-left:4px solid var(--brand);
+    }
+    
+    .faq-item:nth-child(even){
+      background:rgba(78,205,196,0.08);
+      border-left-color:var(--accent);
+    }
+    
+    .faq-question{
+      font-weight:700;
+      margin-bottom:8px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    
+    .faq-answer{
+      color:var(--muted);
+      line-height:1.6;
+    }
+    
+    /* Responsive adjustments */
+    @media(max-width:768px){
+      .hero{
+        padding:40px 16px;
+      }
+      
+      .wrap{
+        padding:16px;
+      }
+      
+      .cta{
+        flex-direction:column;
+        align-items:center;
+      }
+      
+      .btn{
+        width:100%;
+        max-width:280px;
+      }
+      
+      .float-line{
+        right:16px;
+        bottom:16px;
+        padding:14px 18px;
+      }
+      
+      .float-line span{
+        display:none;
+      }
+      
+      .section-header{
+        flex-direction:column;
+        gap:10px;
+      }
+      
+      .hero-icons{
+        gap:15px;
+      }
+    }
+    
+    /* Smooth scroll behavior */
+    html{
+      scroll-behavior:smooth;
+    }
+    
+    /* Focus styles for accessibility */
+    .btn:focus,
+    .float-line:focus{
+      outline:2px solid var(--brand);
+      outline-offset:2px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-icons" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 21h18"/>
+          <path d="M5 21V7l8-4v18"/>
+          <path d="M19 21V11l-6-4"/>
+        </svg>
+      </div>
+      
+      <span class="kicker">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        在地服務・信義區
+      </span>
+      
+      <h1>信義區垃圾代收｜到府收垃圾服務（台北市）</h1>
+      
+      <p class="sub">熟悉吳興街、象山、永春周邊社區動線，住宅、商辦、社區皆可配合。清晨、白天、晚間、週末皆可協調，準點抵達不影響作息。</p>
+      
+      <div class="cta">
+        <a class="btn btn--primary" href="#booking">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/>
+            <polyline points="9,11 12,14 15,11"/>
+            <line x1="12" y1="3" x2="12" y2="14"/>
+          </svg>
+          如何預約
+        </a>
+        <a class="btn" href="#time">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12,6 12,12 16,14"/>
+          </svg>
+          服務時段
+        </a>
+        <a class="btn" href="#faq">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          常見問題
+        </a>
+      </div>
+      
+      <div class="nav">
+        <span class="pill">信義區垃圾代收</span>
+        <span class="pill">信義區 收垃圾</span>
+        <span class="pill">台北市垃圾代收</span>
+        <span class="pill">到府收垃圾</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- 優勢卡片 -->
+    <section class="grid grid-3">
+      <div class="card">
+        <span class="muted">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3,6 5,6 21,6"/>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            <polyline points="10,11 10,17"/>
+            <polyline points="14,11 14,17"/>
+          </svg>
+          為什麼選我們
+        </span>
+        <h2 class="h2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+          在地路線熟悉
+        </h2>
+        <p>信義區熟路段（吳興街、松勤街、松仁路、象山、永春周邊），熟悉社區出入規範，可規劃長期固定或臨時加派到府收垃圾。</p>
+      </div>
+      
+      <div class="card">
+        <span class="muted">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12,6 12,12 16,14"/>
+          </svg>
+          可靠保證
+        </span>
+        <h2 class="h2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22,4 12,14.01 9,11.01"/>
+          </svg>
+          準點與整潔
+        </h2>
+        <p>準點抵達，公共空間保持乾淨，不影響住戶作息。專業服務品質，住戶與管委會更安心。</p>
+      </div>
+      
+      <div class="card">
+        <span class="muted">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          彈性安排與保障
+        </span>
+        <h2 class="h2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          彈性安排與保障
+        </h2>
+        <p>清晨、白天、晚間、週末皆可協調，臨時加派或長期固定皆可安排。<strong>漏收有賠償機制，無需擔心</strong>。</p>
+      </div>
+    </section>
+
+    <!-- 如何預約與估價 -->
+    <section id="booking">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <path d="M8 14h.01"/>
+            <path d="M12 14h.01"/>
+            <path d="M16 14h.01"/>
+          </svg>
+          如何預約與估價
+        </h2>
+      </div>
+      
+      <div class="card">
+        <ol class="list">
+          <li>
+            <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <div>
+              <strong>加 LINE 聯繫</strong><br>
+              提供地址、樓層、是否有電梯等基本資訊
+            </div>
+          </li>
+          <li>
+            <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/>
+              <polyline points="9,11 12,14 15,11"/>
+              <line x1="12" y1="3" x2="12" y2="14"/>
+            </svg>
+            <div>
+              <strong>描述垃圾概況</strong><br>
+              大致袋數或量級，是否有特殊物品
+            </div>
+          </li>
+          <li>
+            <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12,6 12,12 16,14"/>
+            </svg>
+            <div>
+              <strong>協調可行時間窗</strong><br>
+              清晨、白天、晚間、週末皆可配合
+            </div>
+          </li>
+          <li>
+            <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+            <div>
+              <strong>上門收取</strong><br>
+              準點抵達，專業服務
+            </div>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- 服務時段與範圍 -->
+    <section id="time">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12,6 12,12 16,14"/>
+          </svg>
+          服務時段與範圍
+        </h2>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <span class="muted">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12,6 12,12 16,14"/>
+            </svg>
+            服務時段
+          </span>
+          <h3 class="h2">彈性時間安排</h3>
+          <ul class="list">
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2"/>
+                <path d="M12 20v2"/>
+                <path d="M4.93 4.93l1.41 1.41"/>
+                <path d="M17.66 17.66l1.41 1.41"/>
+                <path d="M2 12h2"/>
+                <path d="M20 12h2"/>
+                <path d="M6.34 17.66l-1.41 1.41"/>
+                <path d="M19.07 4.93l-1.41 1.41"/>
+              </svg>
+              <span>清晨、白天時段可協調</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+              <span>晚間時段可配合</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>週末假日可安排</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card">
+          <span class="muted">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            服務範圍
+          </span>
+          <h3 class="h2">台北市信義區</h3>
+          <ul class="list">
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              </svg>
+              <span>吳興街、松勤街周邊</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 7h14l-1 8H6l-1-8z"/>
+                <path d="M5 7l-1-4H1"/>
+                <circle cx="9" cy="20" r="1"/>
+                <circle cx="20" cy="20" r="1"/>
+              </svg>
+              <span>松仁路、永春地區</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3,6 9,1 15,6 21,1 21,14 15,9 9,14 3,9"/>
+              </svg>
+              <span>象山、四獸山周邊</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card">
+          <span class="muted">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            服務對象
+          </span>
+          <h3 class="h2">各類客戶</h3>
+          <ul class="list">
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9,22 9,12 15,12 15,22"/>
+              </svg>
+              <span>住宅、出租套房</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span>商辦、小型店家</span>
+            </li>
+            <li>
+              <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>社區管理單位</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          常見問題
+        </h2>
+      </div>
+      
+      <div class="card">
+        <div class="faq-item">
+          <div class="faq-question">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12,6 12,12 16,14"/>
+            </svg>
+            Q：能清晨或週末收取嗎？
+          </div>
+          <div class="faq-answer">
+            A：可以！我們提供彈性時段服務，清晨、白天、晚間、週末皆可協調安排，請先加 LINE 告知地址與可接受時間窗。
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Q：如何預約與了解詳情？
+          </div>
+          <div class="faq-answer">
+            A：加 LINE 提供地址、樓層、垃圾概況等必要資訊，我們會回覆可行時間窗與服務方式。台北市垃圾代收服務採個別估價。
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+            Q：住宅、商辦、社區垃圾代收皆可嗎？
+          </div>
+          <div class="faq-answer">
+            A：皆可服務！住宅、商辦、社區垃圾代收都有經驗，請說明出入與管制需求（如管理室登記）。象山、永春、吳興街固定路線熟悉。
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <polyline points="9,22 9,12 15,12 15,22"/>
+    </svg>
+    <div>
+      © <span id="year"></span> 信義區垃圾代收服務中心<br>
+      台北市信義區垃圾代收・到府收垃圾服務・專業可靠・準點服務
+    </div>
+  </footer>
+
+  <!-- 懸浮 LINE 按鈕 -->
+  <a class="float-line" href="https://lin.ee/LVJA9bE" aria-label="加 LINE 洽詢與排程" target="_blank" rel="noopener noreferrer">
+    <!-- LINE 圓角圖標 -->
+    <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="36" height="36" rx="8" fill="#FFFFFF"/>
+      <path d="M17.9 8C12.4 8 8 11.9 8 16.7c0 2.7 1.4 5 3.7 6.6l-.8 3.1c-.1.5.4.9.9.7l3.6-1.7c.8.1 1.6.2 2.5.2 5.5 0 9.9-3.9 9.9-8.7 0-4.8-4.4-8.7-9.9-8.7z" fill="#06C755"/>
+      <path d="M12.6 16.4h1.7v4h-1.7v-4zm3 0h1.7v4h-1.7v-4zm3 0h1.7v4h-1.7v-4zm3 0h1.7v4h-1.7v-4z" fill="#0c1116"/>
+    </svg>
+    <span>加 LINE</span>
+  </a>
+
+  <script>
+    // 設置當前年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // 平滑滾動增強
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
