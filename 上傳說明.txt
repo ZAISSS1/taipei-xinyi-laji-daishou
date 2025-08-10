@@ -1,0 +1,24 @@
+GitHub 上傳注意事項
+
+1. 上傳所有檔案到你的 GitHub 儲存庫
+
+2. 關於 gitignore-file：
+   - 這個檔案上傳後需要重新命名為 .gitignore
+   - 在 GitHub 網頁上點擊 gitignore-file
+   - 點擊編輯按鈕（鉛筆圖示）
+   - 將檔案名從 gitignore-file 改為 .gitignore
+   - 提交變更
+
+3. 或者你可以忽略 gitignore-file，因為對於靜態網站來說不是必需的
+
+4. 啟用 GitHub Pages：
+   Settings > Pages > Deploy from a branch > main > / (root) > Save
+
+必要檔案：
+- index.html （主要網頁）
+- robots.txt （SEO）
+- sitemap.xml （SEO）
+- README.md （說明文件）
+
+可選檔案：
+- .gitignore （版本控制用）
